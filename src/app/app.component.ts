@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { FilmService } from './services/film.service'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  providers: [FilmService]
 })
 export class AppComponent {
-  title = 'swapMovies';
+  title = 'Star WarsSome';
 }

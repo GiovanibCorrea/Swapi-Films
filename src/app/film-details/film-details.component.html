@@ -1,0 +1,13 @@
+
+<section *ngIf="movie.characters" class="film-details col-lg-12">
+    <span class="title-section">
+        Personagens:
+    </span><br>
+    <div class="row">
+        <div *ngFor="let character of movie.characters" class="col-lg-3">
+            <div class="card">
+                <app-person [url]="character"></app-person>
+            </div>
+        </div>
+    </div> 
+</section>

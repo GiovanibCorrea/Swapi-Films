@@ -1,0 +1,20 @@
+<div *ngIf="person">
+    <div class="card-header">
+        {{person.name}}
+    </div>
+    
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span>Nascimento: </span>
+            {{person.birth_year}}
+        </li>
+        <li class="list-group-item">
+            <span>Gênero: </span>
+            {{person.gender}}
+        </li>
+        <li class="list-group-item">
+            <app-planet *ngIf='person.homeworld' [url]='person.homeworld'></app-planet>
+        </li>
+    </ul>
+    
+</div>

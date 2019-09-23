@@ -1,0 +1,43 @@
+@import '../../assets/bootstrap-sass/_variables.scss';
+header{
+    margin: 15px 0 25px 0;
+}
+
+ul{
+    list-style: none;
+
+    li{
+        display: inline-grid;
+        font-family: 'Roboto', sans-serif;
+        display: block;
+        
+        .sabre {
+            float: left;
+            width: 30px;
+        }
+        h3{
+            margin: 0;
+            float: left;
+        }
+        
+        .description{
+            padding: 20px 15px;
+            clear: both;
+        }
+
+        .production-values {
+            width: 50%;
+            float: left;
+        }
+
+        .final-image {
+            width: 100%;
+            text-align: center;
+            margin: 25px 0;
+
+            img{
+                width: 70px;
+            }
+        }
+    }
+}

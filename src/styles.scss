@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/bootstrap-sass/variables";
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #3e3739;
+}
+
+body {
+    margin: 0px;
+    background-color: #f3f3f3 !important;
+}
+
+ul {
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "StarJedi";
+    src: url('/assets/fonts/Starjedi.ttf');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "StarJedi" !important;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+@import '../../assets/bootstrap-sass/_variables.scss';
+
+.film-details{
+    margin: 20px 0;
+
+    .title-section {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}

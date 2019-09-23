@@ -1,0 +1,36 @@
+<header>
+    <h1>Star Wars: Filmes</h1>  
+</header>
+
+<section class="container">
+  <ul class="row">  
+    <li *ngFor="let film of films">    
+        <div class="col-lg-12">          
+          <img src="../../assets/images/sabre.svg" alt="sabre" class="sabre">
+          <h3>Star Wars: Episode {{film.episode_id}} - {{film.title}} ({{film.release_date | date: 'yyyy'}})</h3>
+        </div>
+
+        <div class="col-lg-12 description">            
+          {{film.opening_crawl}}
+        </div>
+        
+        <div class="col-lg-12 row">
+          <div class="col-lg-6 col-sm-12 col-xs-12">
+            <strong>Data de lançamento: </strong> 
+            <span>{{film.release_date | date: 'dd/MM/yyyy'}}</span>
+          </div>
+        
+          <div class="col-lg-6 col-sm-12 col-xs-12">
+              <strong>Diretor: </strong> 
+              <span>{{film.director}}</span>
+          </div>
+        </div>
+
+        <app-film-details [url]="film.url"></app-film-details>        
+
+        <div class="final-image">
+          <img src="../../assets/images/sabre-de-luz.svg" alt="sabre-de-luz">
+        </div>
+    </li>
+  </ul>
+</section>
